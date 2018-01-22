@@ -1,4 +1,4 @@
-package com.accolite.interfaces;
+package com.accolite.model.interfaces;
 
 public interface AdminInterface {
 	

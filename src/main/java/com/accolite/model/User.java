@@ -1,6 +1,6 @@
 package com.accolite.model;
 
-import com.accolite.interfaces.UserInterface;
+import com.accolite.model.interfaces.UserInterface;
 
 public class User implements UserInterface{
 	

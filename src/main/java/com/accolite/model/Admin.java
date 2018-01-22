@@ -1,6 +1,6 @@
 package com.accolite.model;
 
-import com.accolite.interfaces.AdminInterface;
+import com.accolite.model.interfaces.AdminInterface;
 
 public class Admin extends User implements AdminInterface{
 	

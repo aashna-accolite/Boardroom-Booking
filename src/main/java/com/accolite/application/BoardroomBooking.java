@@ -6,11 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class BoardroomBooking {
-	
-	@RequestMapping(value = "/login")
+
+	@RequestMapping("/hello")
 	@ResponseBody
-	public String sayHello()
-	{
+	public String handlerOne() {
 		return "Hello";
 	}
 }
