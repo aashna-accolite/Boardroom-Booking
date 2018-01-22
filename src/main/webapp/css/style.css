@@ -1,0 +1,14 @@
+header {
+	
+	margin-bottom: 30px;
+}
+
+nav {
+	background: #000000;
+}
+
+nav ul li {
+	padding: 0px 20px;
+	font-size: 30px;
+	color: white;
+}
