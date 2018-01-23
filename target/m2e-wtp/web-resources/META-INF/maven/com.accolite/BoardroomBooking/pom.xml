@@ -61,27 +61,31 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+<<<<<<< HEAD
 		
 <<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 8b50b4efcc3e728655fabc457c6701f8e6cc2dbd
 		<dependency>
-   <groupId>org.springframework</groupId>
-   <artifactId>spring-jdbc</artifactId>
-   <version>4.3.2.RELEASE</version>
-  </dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
 
-  <dependency>
-   <groupId>org.springframework</groupId>
-   <artifactId>spring-test</artifactId>
-   <version>4.3.2.RELEASE</version>
-   <scope>test</scope>
-  </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.2.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
 
-  <dependency>
-   <groupId>mysql</groupId>
-   <artifactId>mysql-connector-java</artifactId>
-   <version>5.1.9</version>
-  </dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
 
 		<!-- Web Jars -->
 		<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
