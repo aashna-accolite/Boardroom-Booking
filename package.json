@@ -1,0 +1,16 @@
+{
+  "name": "room_booking_system",
+  "version": "1.0.0",
+  "description": "A Room Booking System for company employees",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Bansal",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-messages": "^1.6.8",
+    "angular-ui-bootstrap": "^2.5.6"
+  }
+}
