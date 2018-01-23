@@ -4,14 +4,6 @@ import com.accolite.model.interfaces.AdminInterface;
 
 public class Admin extends User implements AdminInterface{
 	
-	private String password;
-
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
 	public void addRoom() {
 		// TODO Auto-generated method stub
 		

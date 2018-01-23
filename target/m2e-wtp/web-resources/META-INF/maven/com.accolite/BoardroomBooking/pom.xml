@@ -20,26 +20,26 @@
 			<artifactId>servlet-api</artifactId>
 			<version>3.0-alpha-1</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>4.2.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>4.2.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>4.2.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>4.2.0.RELEASE</version>
 		</dependency>
 
 		<dependency>
@@ -61,6 +61,53 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+<<<<<<< HEAD
+		
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 8b50b4efcc3e728655fabc457c6701f8e6cc2dbd
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.2.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
+
+		<!-- Web Jars -->
+		<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
+>>>>>>> e4375ff6e5dcf9f7f3a90246fea89937e1fdeea8
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.2.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
 
 		<!-- Web Jars -->
 		<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
@@ -69,28 +116,6 @@
 			<artifactId>jquery</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.webjars/angularjs -->
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>angularjs</artifactId>
-			<version>1.6.4</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.webjars/angular-ui-bootstrap -->
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>angular-ui-bootstrap</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>4.0.0-alpha.6-1</version>
-		</dependency>
-
 
 	</dependencies>
 	<build>
