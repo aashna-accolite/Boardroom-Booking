@@ -43,12 +43,10 @@ public class User implements UserInterface {
 	}
 
 	public void bookRoom() {
-		// TODO Auto-generated method stub
 
 	}
 
 	public void specialRequest() {
-		// TODO Auto-generated method stub
-
+		
 	}
 }

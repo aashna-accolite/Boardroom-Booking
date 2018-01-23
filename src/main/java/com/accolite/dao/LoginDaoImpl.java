@@ -22,9 +22,8 @@ public class LoginDaoImpl implements LoginDao {
 
 	public void registerUser(User user) {
 
-		String sql = "insert into user values(?,?,?,?)";
-		jdbcTemplate.update(sql,
-				new Object[] { user.getUserId(), user.getUsername(), user.getPassword(), user.getLocationId() });
+		String sql = "insert into user (userID, username, userPassword, userLocID) values(?,?,?,?)";
+		jdbcTemplate.update(sql, user.getUserId(), user.getUsername(), user.getPassword(), user.getLocationId());
 
 	}
 
@@ -32,7 +31,9 @@ public class LoginDaoImpl implements LoginDao {
 		String sql = "select * from user where username='" + user.getUsername() + "' and userPassword='"
 				+ user.getPassword() + "'";
 		List<User> users = jdbcTemplate.query(sql, new UserMapper());
-		return users.isEmpty() ? null :  users.get(0);
+		return users.isEmpty() ? null : users.get(0);
+
+		// TODO check admin
 	}
 }
 

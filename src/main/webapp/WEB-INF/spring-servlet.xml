@@ -17,7 +17,6 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<!-- <bean id="userService" class="jbr.springmvc.service.UserServiceImpl" /> -->
 	<bean id="loginDao" class="com.accolite.dao.LoginDaoImpl" />
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name="dataSource" ref="datasource" />

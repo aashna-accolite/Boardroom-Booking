@@ -2,13 +2,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+
+
+<html ng-app="sampleApp">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <title>Login</title>
 </head>
-<body>
-	<form:form id="loginForm" modelAttribute="login" action="loginProcess"
+<body controller="mainCtrl">
+	<form:form id="loginForm" modelAttribute="login" ng-submit="submit()"
 		method="post">
 		<table align="center">
 			<tr>
@@ -33,9 +36,38 @@
 			</tr>
 		</table>
 	</form:form>
+	<script type="text/javascript">
+		(function() {
+
+			var app = angular.module("sampleApp", []);
+
+			app.controller("mainCtrl", [
+					$scope,
+					$http,
+					function($scope, $http) {
+						var form = {
+							"name" : "nikhil",
+							"pass" : "pass",
+						};
+						var submit = function() {
+							$http.post("/loginProcess", $scope.form).then(
+									onSuccess, onError);
+						};
+
+						$scope.onSuccess = function(response) {
+							console.log(response);
+						};
+
+						$scope.onError = function(response) {
+							console.log("error");
+						};
+					}]);
+
+		})();
+	</script>
 	<table align="center">
 		<tr>
-			<td style="font-style: italic; color: red;">${message}</td>
+			<%-- <td style="font-style: italic; color: red;">${message}</td> --%>
 		</tr>
 	</table>
 </body>
